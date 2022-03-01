@@ -1,3 +1,3 @@
 # git-workflows
 
-Test update
+Test merging `main` into `sync-me` branch after merging PR into `main`.
