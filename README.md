@@ -1,3 +1,3 @@
 # git-workflows
 
-Test merging `main` into `sync-me` branch after merging PR into `main`.
+Test updating main to create merge conflict && merging `main` into `sync-me` branch after merging PR into `main`.
