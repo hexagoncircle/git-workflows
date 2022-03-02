@@ -20,5 +20,5 @@ jobs:
           git fetch --unshallow
           git checkout sync-me
           git pull
-          git merge main
+          git merge main --no-edit
           git push
