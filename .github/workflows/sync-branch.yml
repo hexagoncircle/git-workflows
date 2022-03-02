@@ -11,14 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Set Git config
-      run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email 'github-actions[bot]@users.noreply.github.com'
     - name: Merge main into sync-me branch
       run: |
           git fetch --unshallow
           git checkout sync-me
           git pull
-          git merge main -m "Auto-merge main branch with PR #${{ github.event.pull_request.number }}"
+          git merge main
           git push
